@@ -10,11 +10,24 @@ function Navbar() {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/what-we-do">What We Do</Link></li>
+
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">
+                What We Do
+              </Link>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/branding">Branding</Link></li>
+                <li><Link className="dropdown-item" to="/illustrations">Illustrations</Link></li>
+                <li><Link className="dropdown-item" to="/product-photography">Product Photography</Link></li>
+                <li><Link className="dropdown-item" to="/clothing">Clothing</Link></li>
+              </ul>
+            </li>
+
             <li className="nav-item"><Link className="nav-link" to="/clients">Clients</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">Contact Us</Link></li>
           </ul>
