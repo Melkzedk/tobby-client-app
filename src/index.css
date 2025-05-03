@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+}
+/* Make sure all images behave properly */
+img {
+  display: block;
+}
+
+/* Utility to ensure images fill their containers without distortion */
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}
+.illustrations-section {
+  height: calc(100vh - 56px); /* Adjust if your navbar is taller than 56px */
+  margin-top: 0;
+}
+.illustrations-section {
+  height: calc(100vh - 56px);
+}
