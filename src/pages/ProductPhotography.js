@@ -1,10 +1,29 @@
+// src/pages/ProductPhotography.js
 import React from 'react';
+import image1 from '../Assets/productphoto1.jpg';
+import image2 from '../Assets/productphoto2.jpg'; 
 
 function ProductPhotography() {
   return (
-    <div className="container py-4">
-      <h2>Product Photography</h2>
-      <p>High-quality photos that highlight the best features of your products.</p>
+    <div className="container-fluid px-0">
+      <div className="row g-0">
+        <div className="col-12 col-md-6">
+          <img
+            src={image1}
+            alt="Product 1"
+            className="img-fluid w-100"
+            style={{ objectFit: 'cover', height: '100vh' }}
+          />
+        </div>
+        <div className="col-12 col-md-6">
+          <img
+            src={image2}
+            alt="Product 2"
+            className="img-fluid w-100"
+            style={{ objectFit: 'cover', height: '100vh' }}
+          />
+        </div>
+      </div>
     </div>
   );
 }

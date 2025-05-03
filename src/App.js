@@ -15,18 +15,22 @@ import Clothing from './pages/Clothing';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/branding" element={<Branding />} />
-        <Route path="/illustrations" element={<Illustrations />} />
-        <Route path="/product-photography" element={<ProductPhotography />} />
-        <Route path="/clothing" element={<Clothing />} />
-      </Routes>
-      <Footer />
+      <div className="d-flex flex-column min-vh-100">
+        <Navbar />
+        <div className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/branding" element={<Branding />} />
+            <Route path="/illustrations" element={<Illustrations />} />
+            <Route path="/product-photography" element={<ProductPhotography />} />
+            <Route path="/clothing" element={<Clothing />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }
