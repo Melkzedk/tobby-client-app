@@ -22,11 +22,16 @@ function Navbar() {
             </li>
 
             <li className="nav-item dropdown">
-              {/* Use <a> for dropdown toggle to make Bootstrap dropdown work */}
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
+                id="navbarDropdown"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 What We Do
-              </a>
-              <ul className="dropdown-menu">
+              </button>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><Link className="dropdown-item" to="/branding">Branding</Link></li>
                 <li><Link className="dropdown-item" to="/illustrations">Illustrations</Link></li>
                 <li><Link className="dropdown-item" to="/product-photography">Product Photography</Link></li>
