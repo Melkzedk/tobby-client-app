@@ -1,7 +1,7 @@
 // src/pages/ProductPhotography.js
 import React from 'react';
 import image1 from '../Assets/productphoto1.jpg';
-import image2 from '../Assets/productphoto2.jpg'; 
+import image2 from '../Assets/productphoto2.jpg';
 
 function ProductPhotography() {
   return (
@@ -12,7 +12,7 @@ function ProductPhotography() {
             src={image1}
             alt="Product 1"
             className="img-fluid w-100"
-            style={{ objectFit: 'cover', height: '100vh' }}
+            style={{ objectFit: 'cover', height: '80vh' }} // or 70vh, 60vh etc.
           />
         </div>
         <div className="col-12 col-md-6">
@@ -20,7 +20,7 @@ function ProductPhotography() {
             src={image2}
             alt="Product 2"
             className="img-fluid w-100"
-            style={{ objectFit: 'cover', height: '100vh' }}
+            style={{ objectFit: 'cover', height: '80vh' }}
           />
         </div>
       </div>
