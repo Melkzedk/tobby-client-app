@@ -32,3 +32,20 @@ img {
 .illustrations-section {
   height: calc(100vh - 56px);
 }
+/* Optional: Hover and Dropdown enhancements */
+.nav-link:hover {
+  color: #f57c00 !important;
+}
+
+.dropdown-menu-dark {
+  background-color: #001b4e;
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: white;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+  color: #f57c00;
+  background-color: transparent;
+}
