@@ -6,7 +6,7 @@ import image3 from '../Assets/Design3.jpg';
 function Illustrations() {
   return (
     <div className="container-fluid p-0 m-0 overflow-hidden illustrations-section position-relative">
-      <div className="row g-0" style={{ height: '50vh' }}>
+      <div className="row g-0" style={{ height: '35vh' }}>
         <div className="col-9">
           <img
             src={image1}
@@ -35,10 +35,10 @@ function Illustrations() {
       <div 
         className="position-absolute text-dark fw-semibold px-3 py-2 rounded-2"
         style={{ 
-          bottom: '15px', 
-          left: '15px',
+          bottom: '10px', 
+          left: '10px',
           backgroundColor: '#f8a21c', 
-          fontSize: '1.25rem',
+          fontSize: '1rem',
           zIndex: 10
         }}
       >
