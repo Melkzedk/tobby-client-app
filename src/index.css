@@ -23,15 +23,10 @@ img {
 /* Utility to ensure images fill their containers without distortion */
 .object-fit-cover {
   object-fit: cover;
+  width: 100%;
   height: 100%;
 }
-.illustrations-section {
-  height: calc(100vh - 56px); /* Adjust if your navbar is taller than 56px */
-  margin-top: 0;
-}
-.illustrations-section {
-  height: calc(100vh - 56px);
-}
+*/
 /* Optional: Hover and Dropdown enhancements */
 .nav-link:hover {
   color: #f57c00 !important;
