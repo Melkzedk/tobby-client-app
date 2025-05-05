@@ -6,7 +6,7 @@ import image3 from '../Assets/Design3.jpg';
 function Illustrations() {
   return (
     <div className="container-fluid p-0 m-0 overflow-hidden illustrations-section position-relative">
-      <div className="row g-0" style={{ height: '35vh' }}>
+      <div className="row g-0" style={{ maxHeight: '300px', height: '300px' }}>
         <div className="col-9">
           <img
             src={image1}
@@ -19,14 +19,14 @@ function Illustrations() {
           <img
             src={image2}
             alt="Image 2"
-            className="w-100 h-50"
-            style={{ objectFit: 'cover' }}
+            className="w-100"
+            style={{ height: '50%', objectFit: 'cover' }}
           />
           <img
             src={image3}
             alt="Image 3"
-            className="w-100 h-50"
-            style={{ objectFit: 'cover' }}
+            className="w-100"
+            style={{ height: '50%', objectFit: 'cover' }}
           />
         </div>
       </div>
