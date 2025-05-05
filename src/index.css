@@ -15,6 +15,7 @@ code {
 body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Make sure all images behave properly */
