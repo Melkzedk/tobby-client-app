@@ -13,7 +13,7 @@ function Home() {
     <div className="container-fluid px-0">
       <div className="row g-0">
         {images.map((image, index) => (
-          <div className="col-12 col-md-4" key={index}>
+          <div className="col-6 col-md-4" key={index}>
             <img src={image} alt={`layout-${index}`} className="img-fluid w-100" />
           </div>
         ))}
