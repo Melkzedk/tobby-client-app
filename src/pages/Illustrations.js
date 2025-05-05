@@ -5,12 +5,12 @@ import image3 from '../Assets/Design3.jpg';
 
 function Illustrations() {
   return (
-    <div className="container-fluid p-0 m-0 overflow-hidden illustrations-section position-relative">
-      <div className="row g-0" style={{ height: '25vh' }}>
+    <div className="container-fluid p-0 m-0 illustrations-section position-relative">
+      <div className="row g-0" style={{ height: '18vh' }}>
         <div className="col-9">
           <img
             src={image1}
-            alt="Image 1"
+            alt="Senator design 1"
             className="w-100 h-100"
             style={{ objectFit: 'cover' }}
           />
@@ -18,13 +18,13 @@ function Illustrations() {
         <div className="col-3 d-flex flex-column">
           <img
             src={image2}
-            alt="Image 2"
+            alt="Senator design 2"
             className="w-100 h-50"
             style={{ objectFit: 'cover' }}
           />
           <img
             src={image3}
-            alt="Image 3"
+            alt="Senator design 3"
             className="w-100 h-50"
             style={{ objectFit: 'cover' }}
           />
