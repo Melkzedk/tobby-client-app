@@ -9,94 +9,103 @@ import image6 from '../Assets/clothing6.jpg';
 function Clothing() {
   return (
     <div className="clothing-section">
-      {/* Hero Banner Section */}
-      <div className="position-relative" style={{ backgroundColor: '#FF7C43' }}>
+      {/* Full-width container with no padding */}
+      <div className="container-fluid p-0">
         <div className="row g-0">
-          {/* Left Side */}
-          <div className="col-md-6 position-relative">
-            <img 
+          {/* Left - Full-height Image touching browser edge */}
+          <div className="col-md-6 position-relative p-0">
+            <img
               src={image1}
-              alt="Person in orange clothing" 
+              alt="Vertical Clothing"
               className="w-100"
-              style={{ objectFit: 'cover', height: '400px' }}
+              style={{ height: '500px', objectFit: 'cover' }}
             />
-            <div 
-              className="position-absolute text-dark fw-bold p-2 rounded-1"
-              style={{ 
-                bottom: '20px', 
-                left: '0px',
-                backgroundColor: '#FFB347', 
+            <div
+              className="position-absolute fw-bold text-dark px-3 py-1"
+              style={{
+                bottom: '20px',
+                left: '0',
+                backgroundColor: '#FFB347',
                 fontSize: '1.5rem',
-                zIndex: 10
               }}
             >
               Clothing
             </div>
           </div>
 
-          {/* Right Side */}
-          <div className="col-md-6 position-relative" style={{ backgroundColor: '#FFB347' }}>
-            <div className="text-center pt-4">
-              <p style={{ fontSize: '1.2rem', color: '#333' }}>
-                <span style={{ color: '#ccc' }}>#</span> ELSIUS
-              </p>
+          {/* Right - Image touching the navbar */}
+          <div className="col-md-6 p-0">
+            <div className="position-relative w-100 h-100">
+              <div className="d-flex flex-column h-100">
+                {/* Image positioned to touch the navbar */}
+                <div className="position-relative" style={{ backgroundColor: '#FFB347', height: '350px' }}>
+                  <img
+                    src={image2}
+                    alt="Horizontal Clothing"
+                    className="w-100 h-100"
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <div
+                    className="position-absolute w-100 text-center"
+                    style={{ top: '20px', color: '#fff', fontSize: '1.8rem', fontWeight: 'bold' }}
+                  >
+                    <span style={{ color: '#ccc' }}>#</span>CELSIUS
+                  </div>
+                </div>
+              </div>
             </div>
-            <img 
-              src={image2}
-              alt="Person in white t-shirt" 
-              className="w-100"
-              style={{ objectFit: 'cover', height: '350px' }}
-            />
           </div>
         </div>
 
-        {/* Social Media Icons */}
-        <div className="d-flex justify-content-end p-2 bg-dark">
-          {['linkedin', 'facebook', 'instagram', 'tiktok', 'youtube', 'twitter'].map((social, index) => (
-            <div 
-              key={index} 
-              className="rounded-circle mx-1 d-flex justify-content-center align-items-center"
-              style={{ 
-                width: '30px', 
-                height: '30px', 
-                backgroundColor: index === 0 ? '#0077B5' : 
-                                 index === 1 ? '#3B5998' : 
-                                 index === 2 ? '#E1306C' : 
-                                 index === 3 ? '#000000' : 
-                                 index === 4 ? '#FF0000' : '#1DA1F2',
+        {/* Footer Social Icons */}
+        <div className="d-flex justify-content-end align-items-center p-2 bg-dark">
+          {['linkedin', 'facebook', 'instagram', 'tiktok', 'youtube', 'twitter'].map((social, i) => (
+            <div
+              key={i}
+              className="mx-1 rounded-circle d-flex justify-content-center align-items-center"
+              style={{
+                width: '30px',
+                height: '30px',
+                backgroundColor:
+                  i === 0 ? '#0077B5' :
+                  i === 1 ? '#3B5998' :
+                  i === 2 ? '#E1306C' :
+                  i === 3 ? '#000000' :
+                  i === 4 ? '#FF0000' :
+                            '#1DA1F2',
                 color: '#fff',
-                fontSize: '0.8rem'
+                fontSize: '0.8rem',
               }}
             >
               {social.charAt(0).toUpperCase()}
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Gallery Section */}
-      <div className="py-4" style={{ backgroundColor: '#f5f5f5' }}>
-        <div className="container">
-          <h3 className="mb-4">Clothing</h3>
+        {/* Gallery Section */}
+        <div className="py-4" style={{ backgroundColor: '#f5f5f5' }}>
+          <div className="container">
+            <h3 className="mb-4">Clothing</h3>
 
-          <div className="d-flex align-items-center">
-            {/* Left Arrow */}
-            <button className="btn p-2" style={{ fontSize: '2rem' }}>&lt;</button>
+            <div className="d-flex align-items-center">
+              {/* Left Arrow */}
+              <button className="btn p-2" style={{ fontSize: '2rem' }}>&lt;</button>
 
-            {/* 4 Images in one row, no gaps */}
-            <div className="d-flex flex-nowrap w-100">
-              {[image3, image4, image5, image6].map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`Gallery ${index}`}
-                  style={{ width: '25%', height: '200px', objectFit: 'cover' }}
-                />
-              ))}
+              {/* 4 Images in one row, no gaps */}
+              <div className="d-flex flex-nowrap w-100">
+                {[image3, image4, image5, image6].map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Gallery ${index}`}
+                    style={{ width: '25%', height: '200px', objectFit: 'cover' }}
+                  />
+                ))}
+              </div>
+
+              {/* Right Arrow */}
+              <button className="btn p-2" style={{ fontSize: '2rem' }}>&gt;</button>
             </div>
-
-            {/* Right Arrow */}
-            <button className="btn p-2" style={{ fontSize: '2rem' }}>&gt;</button>
           </div>
         </div>
       </div>
