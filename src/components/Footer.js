@@ -20,22 +20,22 @@ function Footer() {
           <div className="col-md-6 text-md-end">
             <a href="https://revolve.ke" className="text-warning me-3">revolve.ke</a>
             <div className="d-inline-block">
-              <a href="linkedin.com" className="text-white me-2">
+              <a href="https://linkedin.com" className="text-white me-2">
                 <i className="bi bi-linkedin"></i>
               </a>
-              <a href="facebook.com" className="text-white me-2">
+              <a href="https://facebook.com" className="text-white me-2">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="instagram.com" className="text-white me-2">
+              <a href="https://instagram.com" className="text-white me-2">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="tiktok.com" className="text-white me-2">
+              <a href="https://tiktok.com" className="text-white me-2">
                 <i className="bi bi-tiktok"></i>
               </a>
-              <a href="youtube.com" className="text-white me-2">
+              <a href="https://youtube.com" className="text-white me-2">
                 <i className="bi bi-youtube"></i>
               </a>
-              <a href="twitter.com" className="text-white me-2">
+              <a href="https://twitter.com" className="text-white me-2">
                 <i className="bi bi-twitter"></i>
               </a>
             </div>
