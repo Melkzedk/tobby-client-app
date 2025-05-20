@@ -12,6 +12,7 @@ import Illustrations from './pages/Illustrations';
 import ProductPhotography from './pages/ProductPhotography';
 import Clothing from './pages/Clothing';
 import Printing from './pages/printing';
+import Design from './pages/design';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/product-photography" element={<ProductPhotography />} />
             <Route path="/clothing" element={<Clothing />} />
             <Route path="/printing" element={<Printing />} />
+            <Route path="/Design" element={<Design />} />            
           </Routes>
         </div>
         <Footer />

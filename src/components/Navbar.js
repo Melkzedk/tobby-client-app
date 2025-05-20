@@ -37,6 +37,7 @@ function Navbar() {
                 What We Do
               </button>
               <ul className="dropdown-menu dropdown-menu-dark">
+                <li><Link className="dropdown-item" to="/Design">Design</Link></li>
                 <li><Link className="dropdown-item" to="/printing">Printing</Link></li>
                 <li><Link className="dropdown-item" to="/branding">Branding</Link></li>
                 <li><Link className="dropdown-item" to="/illustrations">Illustrations</Link></li>
