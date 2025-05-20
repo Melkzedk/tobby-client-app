@@ -11,6 +11,7 @@ import Branding from './pages/Branding';
 import Illustrations from './pages/Illustrations';
 import ProductPhotography from './pages/ProductPhotography';
 import Clothing from './pages/Clothing';
+import Printing from './pages/printing';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/illustrations" element={<Illustrations />} />
             <Route path="/product-photography" element={<ProductPhotography />} />
             <Route path="/clothing" element={<Clothing />} />
+            <Route path="/printing" element={<Printing />} />
           </Routes>
         </div>
         <Footer />
