@@ -71,7 +71,7 @@ function Clients() {
             </div>
           </div>
         </div>
-      </div> {/* ✅ This was missing */}
+      </div>
     </div>
   );
 }
