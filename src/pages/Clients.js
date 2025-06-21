@@ -35,7 +35,43 @@ function Clients() {
             </div>
           </div>
         </div>
-      </div>
+
+        <div className="col">
+          <div className="card h-100 text-center">
+            <div className="card-body">
+              <h5 className="card-title">Client D</h5>
+              <p className="card-text">Transforming healthcare with cutting-edge solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col">
+          <div className="card h-100 text-center">
+            <div className="card-body">
+              <h5 className="card-title">Client E</h5>
+              <p className="card-text">Innovating in the financial services sector.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col">
+          <div className="card h-100 text-center">
+            <div className="card-body">
+              <h5 className="card-title">Client F</h5>
+              <p className="card-text">Leading the way in renewable energy solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col">
+          <div className="card h-100 text-center">
+            <div className="card-body">
+              <h5 className="card-title">Client G</h5>
+              <p className="card-text">Pioneering advancements in artificial intelligence.</p>
+            </div>
+          </div>
+        </div>
+      </div> {/* ✅ This was missing */}
     </div>
   );
 }
